@@ -18,3 +18,18 @@
     - Pipeline -> usado para flujos de CI CD -> son mas avanzado con script con groovy
     - Multibranch pipeline -> ideal para proyectos con varias ramas en git
     - Maven Project -> para proyectos en maven
+
+# Builds
+- Es una ejecución de un job
+- Cada vez que se realice una ejecucion, se genera un build
+    - Obtener el codigo fuente
+    - Ejecuta los pasos que se ah obtenido
+    - Registra la salida en la consola
+    - Guarda artefactos (Opcional)
+    - Muestra el resultado del build en la interfaz
+
+# Disparadores automaticos
+- Polling SCM -> Revisar periodicamente si hay cambios en el repositorio git
+- Webhook -> Dispara el job cuando hay un cambio en el codigo
+- Programacion Cron -> Se ejecuta en intervalos de tiempo
+- Disparo por otro job -> Un job podra ejecutar cuando otro job termine
