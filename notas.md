@@ -33,3 +33,14 @@
 - Webhook -> Dispara el job cuando hay un cambio en el codigo
 - Programacion Cron -> Se ejecuta en intervalos de tiempo
 - Disparo por otro job -> Un job podra ejecutar cuando otro job termine
+
+# Variables
+- BUILD_NUMBER: Numero del build actual
+- JOB_NAME: Nombre de job que se esta ejecutando
+- WORKSPACE: directorio donde jenkis almacena los archivos del job
+- GIT_COMMIT: hash del commit si el job usa git
+
+# Ejecutar un programa en python desde jenkins
+Docker -> Contenedor(Linux - Jenkins)
+
+docker exec -it --user root nombrecontenedor /bin/bash
