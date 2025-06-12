@@ -44,3 +44,5 @@
 Docker -> Contenedor(Linux - Jenkins)
 
 docker exec -it --user root nombrecontenedor /bin/bash
+apt-get update
+apt-get install -y python3 python3.pip
